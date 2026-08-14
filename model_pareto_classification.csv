@@ -1,0 +1,17 @@
+model,creator,release_date,intelligence_index,output_tokens_per_second,input_price_per_million,output_price_per_million,blended_price_per_million,source_url,retrieved_date,point_id,pareto_optimal,selection
+GPT-5.6 Sol (max),OpenAI,2026-07-09,61,61.7,5.0,30.0,4.35,https://artificialanalysis.ai/models/gpt-5-6-sol,2026-08-14,M01,False,
+GPT-5.6 Terra (max),OpenAI,2026-07-09,57,115.5,2.0,12.0,1.74,https://artificialanalysis.ai/models/gpt-5-6-terra,2026-08-14,M02,True,
+GPT-5.6 Luna (max),OpenAI,2026-07-09,52,152.5,0.2,1.2,0.17,https://artificialanalysis.ai/models/gpt-5-6-luna,2026-08-14,M03,True,
+"Claude Opus 5 (Adaptive Reasoning, Max Effort)",Anthropic,2026-07-24,63,52.7,5.0,25.0,3.85,https://artificialanalysis.ai/models/claude-opus-5,2026-08-14,M04,True,intelligence anchor
+"Claude Sonnet 5 (Adaptive Reasoning, Max Effort)",Anthropic,2026-06-30,55,66.6,2.0,10.0,1.54,https://artificialanalysis.ai/models/claude-sonnet-5,2026-08-14,M05,False,
+Grok 4.6 (high),xAI,2026-08-12,61,65.5,2.0,6.0,1.35,https://artificialanalysis.ai/models/grok-4-6,2026-08-14,M06,True,
+Qwen3.8 Max,Alibaba,2026-08-03,58,47.1,2.0,6.0,1.18,https://artificialanalysis.ai/models/qwen3-8-max,2026-08-14,M07,True,
+"DeepSeek V4 Flash 0731 (Reasoning, Max Effort)",DeepSeek,2026-07-31,52,121.4,0.14,0.28,0.06,https://artificialanalysis.ai/models/deepseek-v4-flash,2026-08-14,M08,True,price anchor
+"DeepSeek V4 Pro 0813 (Reasoning, Max Effort)",DeepSeek,2026-08-13,53,80.0,1.32,3.96,0.69,https://artificialanalysis.ai/models/deepseek-v4-pro,2026-08-14,M09,False,
+Muse Spark 1.1 (xhigh),Meta,2026-07-09,53,230.4,1.25,4.25,0.78,https://artificialanalysis.ai/models/muse-spark-1-1,2026-08-14,M10,False,
+Kimi K3 (max),Moonshot AI,2026-07-16,60,40.2,3.0,15.0,2.31,https://artificialanalysis.ai/models/kimi-k3,2026-08-14,M11,False,
+MiniMax-M3,MiniMax,2026-06-01,45,82.8,0.3,1.2,0.22,https://artificialanalysis.ai/models/minimax-m3,2026-08-14,M12,False,
+Gemini 3.7 Flash (high),Google,2026-08-13,56,340.1,0.75,3.75,0.58,https://artificialanalysis.ai/models/gemini-3-7-flash,2026-08-14,M13,True,speed anchor; balanced
+GLM-5.2 (max),Z AI,2026-06-16,53,108.1,1.4,4.4,0.88,https://artificialanalysis.ai/models/glm-5-2,2026-08-14,M14,False,
+Nemotron 3.5 Lightning,NVIDIA,2026-08-11,24,293.8,0.05,0.2,0.07,https://artificialanalysis.ai/models/nemotron-3-5-lightning,2026-08-14,M15,True,
+MiMo-V2.5-Pro,Xiaomi,2026-04-22,43,46.3,0.43,0.87,0.18,https://artificialanalysis.ai/models/mimo-v2-5-pro,2026-08-14,M16,False,
