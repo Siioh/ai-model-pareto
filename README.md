@@ -1,50 +1,38 @@
 # AI Model Pareto Trade-offs
 
-An interactive comparison of AI models across intelligence, output speed, and blended price.
+This interactive chart compares AI models by intelligence, output speed, and blended token price.
 
-[Open the interactive visualization](https://siioh.github.io/ai-model-pareto/)
+[Explore the interactive chart](https://siioh.github.io/ai-model-pareto/)
 
-## What this shows
+## What the chart shows
 
-The chart identifies models on the Pareto frontier: models that are not simultaneously beaten by another tested model on intelligence, speed, and price.
+Each point represents one tested model. Higher intelligence and output speed are better; lower blended price is better. The price axis is logarithmic, which keeps differences among lower-cost models visible.
 
-- Higher intelligence is better.
-- Higher output speed is better.
-- Lower blended price is better.
-- Prices use a logarithmic scale so lower-cost models remain distinguishable.
+## Reading the results
 
-## How to read it
-
-- **Pareto-optimal models** are efficient trade-off choices among the tested models.
-- **Dominated models** are outperformed on all three objectives by at least one tested alternative.
-- **Anchors** are the single-objective leaders:
+- A **Pareto-optimal model** has no tested alternative that is at least as good on every metric and better on at least one.
+- A **dominated model** has at least one tested alternative that is at least as good on every metric and better on at least one.
+- An **anchor** is the tested model with the best result on one metric:
   - Intelligence anchor: highest intelligence
   - Speed anchor: fastest output
   - Price anchor: lowest blended price
-- **Balanced candidate** is the Pareto model nearest the normalized “ideal” across all three objectives.
+- The **balanced candidate** is the Pareto model closest to the normalized ideal of high intelligence, fast output, and low price.
 
-Use the sidebar to:
-
-- Highlight a model and locate it in the 3D plot
-- View its metrics
-- Show or hide individual models
-- Filter by provider
-- Switch between light and dark mode
+Highlight a model in the sidebar to see its metrics and locate its point in the 3D plot. You can also show or hide individual models, filter by provider, and switch between light and dark mode.
 
 ## Data and assumptions
 
-- Model metrics are a point-in-time snapshot and should be treated as comparative estimates, not permanent facts.
-- Blended price uses a **7:2:1 input : cached-input : output** token mix.
-- Intelligence, pricing, and speed values are a point-in-time compilation from the sources cited in the visualization.
-- The comparison includes only the models listed in the visualization; absence does not imply poor quality.
+- The intelligence, price, and speed values come from the sources cited in the visualization and reflect a single point in time. Treat them as comparative estimates rather than permanent facts.
+- Blended price assumes a **7:2:1** mix of input, cached-input, and output tokens.
+- The comparison covers only the models listed in the visualization. A model's absence does not imply poor quality.
 
 ## Files
 
-- `index.html` — self-contained interactive visualization
-- `model_pareto_front.png` — publication-ready static figure
-- `model_pareto_front.pdf` — vector-ready static figure
-- `model_pareto_classification.csv` — classified model data
+- `index.html`: self-contained interactive visualization
+- `model_pareto_front.png`: publication-ready static figure
+- `model_pareto_front.pdf`: vector-ready static figure
+- `model_pareto_classification.csv`: classified model data
 
 ## Notes and limitations
 
-Performance and pricing vary by provider, region, deployment, workload, and time. The visualization is intended to make trade-offs easier to explore, not to replace model-specific evaluation for a production use case.
+Performance and pricing vary by provider, region, deployment, workload, and time. Use the visualization to explore trade-offs, then evaluate candidate models against the needs of your production workload.
